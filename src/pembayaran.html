@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-white dark:bg-gray-800 text-gray-900 dark:text-white">
+    <!-- navbar -->
+    <nav
+      class=" navbar bg-white dark:bg-gray-800 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 z-{999}"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="validasiAlamat.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse text-gray-900 dark:text-white text-2xl"
+        >
+          <i class="bx bx-left-arrow-alt"></i>
+        </a>
+        <div
+          class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+        ></div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        ></div>
+      </div>
+    </nav>
+    <!-- lastnavbar -->
+
+    <div class="container mx-auto px-4 py-8 mt-10">
+        <h2 class="mb-20 text-center font-bold text-3xl">Selesaikan <span class="text-cyan-600">Pembayaran</span></h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 h-screen">
+        <div class="bg-slate-400 rounded-lg shadow-lg p-4 animasi1">
+            <h2 class="text-2xl font-bold text-center">Barang Yang di pilih</h2>
+          <img
+            src="./Asset/product/Apple-MacBook-Air-13-MGN63IDA-space-grey.png"
+            alt="Gambar Produk"
+            class=""
+          />
+          <h2 class="text-2xl font-bold mb-2">Apple Macbook</h2>
+          <p class="text-gray-600 mb-4">
+            MacBook Air terkenal karena desainnya yang ringan,
+            tipis, dan portabilitasnya yang tinggi. Laptop ini dirancang untuk
+            memenuhi kebutuhan pengguna yang sering bepergian dan membutuhkan
+            perangkat yang mudah dibawa.
+          </p>
+          <p class="text-gray-600">$45</p>
+        </div>
+        <!-- metode -->
+        <div class="bg-slate-400 rounded-lg shadow-lg p-4">
+          <h1 class="text-2xl font-bold mb-4 text-center">Pilih Metode pembayaran & Pengiriman</h1>
+          <div class="w-full max-w-sm mt-10 mx-auto">
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                        Nama M-banking / E-wallet
+                    </label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="name" type="text" placeholder="Masukkan nama pada kartu">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="card-number">
+                        Nomor M-banking / E-wallet
+                    </label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="card-number" type="text" placeholder="Masukkan nomor kartu">
+                </div>
+                <div class="items-center justify-between mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="metode-pembayaran">Metode Pembayaran</label>
+                    <select
+                    class="block appearance-none w-full text-slate-600 border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                    <option>BRI</option>
+                    <option>BCA</option>
+                    <option>PAYPAY</option>
+                    <option>GOPAY</option>
+                </select>
+                </div>
+
+                <div class="items-center justify-between mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="metode-pembayaran">Pengiriman</label>
+                    <select
+                    class="block appearance-none w-full text-slate-600 border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                    <option>JNT</option>
+                    <option>JNE</option>
+                    <option>POS INDONESIA</option>
+                    <option>Sicepat Express</option>
+                </select>
+                </div>
+
+                <div class="mb-6">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="address">
+                        Detail Alamat
+                    </label>
+                    <textarea
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="address" placeholder="Masukkan alamat penagihan"></textarea>
+                </div>
+                <div class="flex items-center justify-between">
+                    <a href="index.html" onclick="alert('Selamat Pemesanan anda berhasil')"
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="button">
+                        Bayar
+                    </a>
+                    <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800"
+                        href="validasiAlamat.html">
+                        Batal
+                    </a>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+    <!-- script -->
+    <script src="darkMode.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="animate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
+</html>
